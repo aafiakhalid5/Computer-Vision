@@ -1,0 +1,1749 @@
+Best Result:
+Experiment Params: {'gamma': 1, 'C': 10, 'n_clusters': 50, 'max_descriptors': 100000, 'powernorm': True, 'gmp': True}
+
+Top-1 accuracy: 0.8836111111111111 - mAP: 0.7427616010412785
+
+
+Other Experiments:
+
+
+
+Experiment (2024-12-08 06:48:29.021660):
+  n_clusters: 50
+  max_descriptors: 100000
+  powernorm: False
+  gmp: False
+  gamma: 10
+  C: 10
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298682105278409
+
+Experiment (2024-12-08 06:55:35.206129):
+  n_clusters: 50
+  max_descriptors: 100000
+  powernorm: False
+  gmp: False
+  gamma: 10
+  C: 100
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298692715255996
+
+Experiment (2024-12-08 07:03:07.283316):
+  n_clusters: 50
+  max_descriptors: 100000
+  powernorm: False
+  gmp: False
+  gamma: 10
+  C: 1000
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298690510430755
+
+Experiment (2024-12-08 07:14:39.585152):
+  n_clusters: 50
+  max_descriptors: 100000
+  powernorm: False
+  gmp: False
+  gamma: 100
+  C: 10
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298590484616049
+
+Experiment (2024-12-08 07:21:49.369563):
+  n_clusters: 50
+  max_descriptors: 100000
+  powernorm: False
+  gmp: False
+  gamma: 100
+  C: 100
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298553700883369
+
+Experiment (2024-12-08 07:28:57.222663):
+  n_clusters: 50
+  max_descriptors: 100000
+  powernorm: False
+  gmp: False
+  gamma: 100
+  C: 1000
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298667285403987
+
+Experiment (2024-12-08 07:36:08.271235):
+  n_clusters: 50
+  max_descriptors: 100000
+  powernorm: False
+  gmp: False
+  gamma: 1000
+  C: 10
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298678582402739
+
+Experiment (2024-12-08 07:43:17.662460):
+  n_clusters: 50
+  max_descriptors: 100000
+  powernorm: False
+  gmp: False
+  gamma: 1000
+  C: 100
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298783095410342
+
+Experiment (2024-12-08 07:50:18.395471):
+  n_clusters: 50
+  max_descriptors: 100000
+  powernorm: False
+  gmp: False
+  gamma: 1000
+  C: 1000
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298797176584686
+
+Experiment (2024-12-08 08:03:23.273876):
+  n_clusters: 50
+  max_descriptors: 100000
+  powernorm: False
+  gmp: True
+  gamma: 10
+  C: 10
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.729871443129937
+
+Experiment (2024-12-08 08:10:16.427625):
+  n_clusters: 50
+  max_descriptors: 100000
+  powernorm: False
+  gmp: True
+  gamma: 10
+  C: 100
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298697039195441
+
+Experiment (2024-12-08 08:16:56.262391):
+  n_clusters: 50
+  max_descriptors: 100000
+  powernorm: False
+  gmp: True
+  gamma: 10
+  C: 1000
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298469008816992
+
+Experiment (2024-12-08 08:30:06.240029):
+  n_clusters: 50
+  max_descriptors: 100000
+  powernorm: False
+  gmp: True
+  gamma: 100
+  C: 10
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298782206766102
+
+Experiment (2024-12-08 08:36:47.504706):
+  n_clusters: 50
+  max_descriptors: 100000
+  powernorm: False
+  gmp: True
+  gamma: 100
+  C: 100
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.729857673701675
+
+Experiment (2024-12-08 08:43:46.354498):
+  n_clusters: 50
+  max_descriptors: 100000
+  powernorm: False
+  gmp: True
+  gamma: 100
+  C: 1000
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298541854338345
+
+Experiment (2024-12-08 08:55:57.378248):
+  n_clusters: 50
+  max_descriptors: 100000
+  powernorm: False
+  gmp: True
+  gamma: 1000
+  C: 10
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298593553396635
+
+Experiment (2024-12-08 09:02:51.974792):
+  n_clusters: 50
+  max_descriptors: 100000
+  powernorm: False
+  gmp: True
+  gamma: 1000
+  C: 100
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298569567934478
+
+Experiment (2024-12-08 09:09:33.765602):
+  n_clusters: 50
+  max_descriptors: 100000
+  powernorm: False
+  gmp: True
+  gamma: 1000
+  C: 1000
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298802685828376
+
+Experiment (2024-12-08 09:16:16.548805):
+  n_clusters: 50
+  max_descriptors: 100000
+  powernorm: True
+  gmp: False
+  gamma: 10
+  C: 10
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298773839803839
+
+Experiment (2024-12-08 09:23:05.793183):
+  n_clusters: 50
+  max_descriptors: 100000
+  powernorm: True
+  gmp: False
+  gamma: 10
+  C: 100
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298670494276401
+
+Experiment (2024-12-08 09:29:46.337686):
+  n_clusters: 50
+  max_descriptors: 100000
+  powernorm: True
+  gmp: False
+  gamma: 10
+  C: 1000
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298581484469926
+
+Experiment (2024-12-08 09:36:24.230284):
+  n_clusters: 50
+  max_descriptors: 100000
+  powernorm: True
+  gmp: False
+  gamma: 100
+  C: 10
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298825632659878
+
+Experiment (2024-12-08 09:43:04.761237):
+  n_clusters: 50
+  max_descriptors: 100000
+  powernorm: True
+  gmp: False
+  gamma: 100
+  C: 100
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298662258551251
+
+Experiment (2024-12-08 09:49:54.700699):
+  n_clusters: 50
+  max_descriptors: 100000
+  powernorm: True
+  gmp: False
+  gamma: 100
+  C: 1000
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298623309066982
+
+Experiment (2024-12-08 09:56:39.179643):
+  n_clusters: 50
+  max_descriptors: 100000
+  powernorm: True
+  gmp: False
+  gamma: 1000
+  C: 10
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298711870979816
+
+Experiment (2024-12-08 10:03:18.619725):
+  n_clusters: 50
+  max_descriptors: 100000
+  powernorm: True
+  gmp: False
+  gamma: 1000
+  C: 100
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298687490318899
+
+Experiment (2024-12-08 10:10:04.653376):
+  n_clusters: 50
+  max_descriptors: 100000
+  powernorm: True
+  gmp: False
+  gamma: 1000
+  C: 1000
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298794082855791
+
+Experiment (2024-12-08 10:16:52.384741):
+  n_clusters: 50
+  max_descriptors: 100000
+  powernorm: True
+  gmp: True
+  gamma: 10
+  C: 10
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298702011258398
+
+Experiment (2024-12-08 10:23:32.702991):
+  n_clusters: 50
+  max_descriptors: 100000
+  powernorm: True
+  gmp: True
+  gamma: 10
+  C: 100
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298579983823974
+
+Experiment (2024-12-08 10:30:21.019716):
+  n_clusters: 50
+  max_descriptors: 100000
+  powernorm: True
+  gmp: True
+  gamma: 10
+  C: 1000
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298518844961386
+
+Experiment (2024-12-08 10:37:02.832654):
+  n_clusters: 50
+  max_descriptors: 100000
+  powernorm: True
+  gmp: True
+  gamma: 100
+  C: 10
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298760624706823
+
+Experiment (2024-12-08 10:43:44.993786):
+  n_clusters: 50
+  max_descriptors: 100000
+  powernorm: True
+  gmp: True
+  gamma: 100
+  C: 100
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298661169524164
+
+Experiment (2024-12-08 10:50:34.018491):
+  n_clusters: 50
+  max_descriptors: 100000
+  powernorm: True
+  gmp: True
+  gamma: 100
+  C: 1000
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298644720554884
+
+Experiment (2024-12-08 10:57:14.619988):
+  n_clusters: 50
+  max_descriptors: 100000
+  powernorm: True
+  gmp: True
+  gamma: 1000
+  C: 10
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298572823645292
+
+Experiment (2024-12-08 11:04:01.529742):
+  n_clusters: 50
+  max_descriptors: 100000
+  powernorm: True
+  gmp: True
+  gamma: 1000
+  C: 100
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298578061931921
+
+Experiment (2024-12-08 11:10:48.979776):
+  n_clusters: 50
+  max_descriptors: 100000
+  powernorm: True
+  gmp: True
+  gamma: 1000
+  C: 1000
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298663989688153
+
+Experiment (2024-12-08 11:17:30.217129):
+  n_clusters: 50
+  max_descriptors: 500000
+  powernorm: False
+  gmp: False
+  gamma: 10
+  C: 10
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298511875976427
+
+Experiment (2024-12-08 11:24:20.924136):
+  n_clusters: 50
+  max_descriptors: 500000
+  powernorm: False
+  gmp: False
+  gamma: 10
+  C: 100
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298606801769435
+
+Experiment (2024-12-08 11:31:12.847915):
+  n_clusters: 50
+  max_descriptors: 500000
+  powernorm: False
+  gmp: False
+  gamma: 10
+  C: 1000
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298718970772147
+
+Experiment (2024-12-08 11:38:00.513010):
+  n_clusters: 50
+  max_descriptors: 500000
+  powernorm: False
+  gmp: False
+  gamma: 100
+  C: 10
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298686704628342
+
+Experiment (2024-12-08 11:44:44.197000):
+  n_clusters: 50
+  max_descriptors: 500000
+  powernorm: False
+  gmp: False
+  gamma: 100
+  C: 100
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298594139456397
+
+Experiment (2024-12-08 11:51:25.115527):
+  n_clusters: 50
+  max_descriptors: 500000
+  powernorm: False
+  gmp: False
+  gamma: 100
+  C: 1000
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298706746720631
+
+Experiment (2024-12-08 11:58:16.609446):
+  n_clusters: 50
+  max_descriptors: 500000
+  powernorm: False
+  gmp: False
+  gamma: 1000
+  C: 10
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.729857453080789
+
+Experiment (2024-12-08 12:05:04.676481):
+  n_clusters: 50
+  max_descriptors: 500000
+  powernorm: False
+  gmp: False
+  gamma: 1000
+  C: 100
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298459976999611
+
+Experiment (2024-12-08 12:11:47.955468):
+  n_clusters: 50
+  max_descriptors: 500000
+  powernorm: False
+  gmp: False
+  gamma: 1000
+  C: 1000
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298456490967985
+
+Experiment (2024-12-08 12:18:36.182191):
+  n_clusters: 50
+  max_descriptors: 500000
+  powernorm: False
+  gmp: True
+  gamma: 10
+  C: 10
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298647536090107
+
+Experiment (2024-12-08 12:25:21.507613):
+  n_clusters: 50
+  max_descriptors: 500000
+  powernorm: False
+  gmp: True
+  gamma: 10
+  C: 100
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.729875215455351
+
+Experiment (2024-12-08 12:32:06.328471):
+  n_clusters: 50
+  max_descriptors: 500000
+  powernorm: False
+  gmp: True
+  gamma: 10
+  C: 1000
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298758155856255
+
+Experiment (2024-12-08 12:38:54.696069):
+  n_clusters: 50
+  max_descriptors: 500000
+  powernorm: False
+  gmp: True
+  gamma: 100
+  C: 10
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298691349944362
+
+Experiment (2024-12-08 12:45:48.639375):
+  n_clusters: 50
+  max_descriptors: 500000
+  powernorm: False
+  gmp: True
+  gamma: 100
+  C: 100
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298587940040405
+
+Experiment (2024-12-08 12:52:34.290562):
+  n_clusters: 50
+  max_descriptors: 500000
+  powernorm: False
+  gmp: True
+  gamma: 100
+  C: 1000
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298593925499025
+
+Experiment (2024-12-08 12:59:20.702322):
+  n_clusters: 50
+  max_descriptors: 500000
+  powernorm: False
+  gmp: True
+  gamma: 1000
+  C: 10
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298679147095688
+
+Experiment (2024-12-08 13:06:09.821888):
+  n_clusters: 50
+  max_descriptors: 500000
+  powernorm: False
+  gmp: True
+  gamma: 1000
+  C: 100
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298479830972675
+
+Experiment (2024-12-08 13:13:02.087188):
+  n_clusters: 50
+  max_descriptors: 500000
+  powernorm: False
+  gmp: True
+  gamma: 1000
+  C: 1000
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298665254328204
+
+Experiment (2024-12-08 13:19:44.227682):
+  n_clusters: 50
+  max_descriptors: 500000
+  powernorm: True
+  gmp: False
+  gamma: 10
+  C: 10
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298532730959638
+
+Experiment (2024-12-08 13:26:27.640375):
+  n_clusters: 50
+  max_descriptors: 500000
+  powernorm: True
+  gmp: False
+  gamma: 10
+  C: 100
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298774437976764
+
+Experiment (2024-12-08 13:33:22.292403):
+  n_clusters: 50
+  max_descriptors: 500000
+  powernorm: True
+  gmp: False
+  gamma: 10
+  C: 1000
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.729840087149168
+
+Experiment (2024-12-08 13:40:10.313356):
+  n_clusters: 50
+  max_descriptors: 500000
+  powernorm: True
+  gmp: False
+  gamma: 100
+  C: 10
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298596550496379
+
+Experiment (2024-12-08 13:46:53.204302):
+  n_clusters: 50
+  max_descriptors: 500000
+  powernorm: True
+  gmp: False
+  gamma: 100
+  C: 100
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.729854616101022
+
+Experiment (2024-12-08 13:53:41.063242):
+  n_clusters: 50
+  max_descriptors: 500000
+  powernorm: True
+  gmp: False
+  gamma: 100
+  C: 1000
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298748644224328
+
+Experiment (2024-12-08 14:00:37.122690):
+  n_clusters: 50
+  max_descriptors: 500000
+  powernorm: True
+  gmp: False
+  gamma: 1000
+  C: 10
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.729855503155894
+
+Experiment (2024-12-08 14:07:21.853557):
+  n_clusters: 50
+  max_descriptors: 500000
+  powernorm: True
+  gmp: False
+  gamma: 1000
+  C: 100
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298592596734337
+
+Experiment (2024-12-08 14:14:11.139094):
+  n_clusters: 50
+  max_descriptors: 500000
+  powernorm: True
+  gmp: False
+  gamma: 1000
+  C: 1000
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298627468994479
+
+Experiment (2024-12-08 14:20:54.041577):
+  n_clusters: 50
+  max_descriptors: 500000
+  powernorm: True
+  gmp: True
+  gamma: 10
+  C: 10
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298687902294481
+
+Experiment (2024-12-08 14:27:42.992131):
+  n_clusters: 50
+  max_descriptors: 500000
+  powernorm: True
+  gmp: True
+  gamma: 10
+  C: 100
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298738726127395
+
+Experiment (2024-12-08 14:34:37.819503):
+  n_clusters: 50
+  max_descriptors: 500000
+  powernorm: True
+  gmp: True
+  gamma: 10
+  C: 1000
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298574758285435
+
+Experiment (2024-12-08 14:41:32.189501):
+  n_clusters: 50
+  max_descriptors: 500000
+  powernorm: True
+  gmp: True
+  gamma: 100
+  C: 10
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298590870116455
+
+Experiment (2024-12-08 14:48:16.319595):
+  n_clusters: 50
+  max_descriptors: 500000
+  powernorm: True
+  gmp: True
+  gamma: 100
+  C: 100
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298786080351245
+
+Experiment (2024-12-08 14:55:13.729223):
+  n_clusters: 50
+  max_descriptors: 500000
+  powernorm: True
+  gmp: True
+  gamma: 100
+  C: 1000
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298497337436897
+
+Experiment (2024-12-08 15:02:09.263001):
+  n_clusters: 50
+  max_descriptors: 500000
+  powernorm: True
+  gmp: True
+  gamma: 1000
+  C: 10
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298560182825222
+
+Experiment (2024-12-08 15:08:57.189329):
+  n_clusters: 50
+  max_descriptors: 500000
+  powernorm: True
+  gmp: True
+  gamma: 1000
+  C: 100
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298577424074454
+
+Experiment (2024-12-08 15:15:50.259467):
+  n_clusters: 50
+  max_descriptors: 500000
+  powernorm: True
+  gmp: True
+  gamma: 1000
+  C: 1000
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298616342631241
+
+Experiment (2024-12-08 15:22:38.850140):
+  n_clusters: 50
+  max_descriptors: 1000000
+  powernorm: False
+  gmp: False
+  gamma: 10
+  C: 10
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298663214630933
+
+Experiment (2024-12-08 15:29:24.600479):
+  n_clusters: 50
+  max_descriptors: 1000000
+  powernorm: False
+  gmp: False
+  gamma: 10
+  C: 100
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298640312989717
+
+Experiment (2024-12-08 15:36:16.659321):
+  n_clusters: 50
+  max_descriptors: 1000000
+  powernorm: False
+  gmp: False
+  gamma: 10
+  C: 1000
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298688134678624
+
+Experiment (2024-12-08 15:43:04.147152):
+  n_clusters: 50
+  max_descriptors: 1000000
+  powernorm: False
+  gmp: False
+  gamma: 100
+  C: 10
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298691659310619
+
+Experiment (2024-12-08 15:49:55.237289):
+  n_clusters: 50
+  max_descriptors: 1000000
+  powernorm: False
+  gmp: False
+  gamma: 100
+  C: 100
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298732255102897
+
+Experiment (2024-12-08 15:56:41.643402):
+  n_clusters: 50
+  max_descriptors: 1000000
+  powernorm: False
+  gmp: False
+  gamma: 100
+  C: 1000
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298616696441049
+
+Experiment (2024-12-08 16:03:37.491160):
+  n_clusters: 50
+  max_descriptors: 1000000
+  powernorm: False
+  gmp: False
+  gamma: 1000
+  C: 10
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298535522400061
+
+Experiment (2024-12-08 16:10:28.136031):
+  n_clusters: 50
+  max_descriptors: 1000000
+  powernorm: False
+  gmp: False
+  gamma: 1000
+  C: 100
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298643774968999
+
+Experiment (2024-12-08 16:17:21.730611):
+  n_clusters: 50
+  max_descriptors: 1000000
+  powernorm: False
+  gmp: False
+  gamma: 1000
+  C: 1000
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298649413298796
+
+Experiment (2024-12-08 16:24:08.975419):
+  n_clusters: 50
+  max_descriptors: 1000000
+  powernorm: False
+  gmp: True
+  gamma: 10
+  C: 10
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298664671005433
+
+Experiment (2024-12-08 16:31:04.479720):
+  n_clusters: 50
+  max_descriptors: 1000000
+  powernorm: False
+  gmp: True
+  gamma: 10
+  C: 100
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298616955141926
+
+Experiment (2024-12-08 16:37:54.659359):
+  n_clusters: 50
+  max_descriptors: 1000000
+  powernorm: False
+  gmp: True
+  gamma: 10
+  C: 1000
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298626656878995
+
+Experiment (2024-12-08 16:44:48.428944):
+  n_clusters: 50
+  max_descriptors: 1000000
+  powernorm: False
+  gmp: True
+  gamma: 100
+  C: 10
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298497857955438
+
+Experiment (2024-12-08 16:51:43.149871):
+  n_clusters: 50
+  max_descriptors: 1000000
+  powernorm: False
+  gmp: True
+  gamma: 100
+  C: 100
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298464963074738
+
+Experiment (2024-12-08 16:58:33.569408):
+  n_clusters: 50
+  max_descriptors: 1000000
+  powernorm: False
+  gmp: True
+  gamma: 100
+  C: 1000
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298601997727924
+
+Experiment (2024-12-08 17:05:29.157598):
+  n_clusters: 50
+  max_descriptors: 1000000
+  powernorm: False
+  gmp: True
+  gamma: 1000
+  C: 10
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298626325186726
+
+Experiment (2024-12-08 17:12:18.459233):
+  n_clusters: 50
+  max_descriptors: 1000000
+  powernorm: False
+  gmp: True
+  gamma: 1000
+  C: 100
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298645725970189
+
+Experiment (2024-12-08 17:19:10.278346):
+  n_clusters: 50
+  max_descriptors: 1000000
+  powernorm: False
+  gmp: True
+  gamma: 1000
+  C: 1000
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298704266002548
+
+Experiment (2024-12-08 17:26:02.569240):
+  n_clusters: 50
+  max_descriptors: 1000000
+  powernorm: True
+  gmp: False
+  gamma: 10
+  C: 10
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298721659392283
+
+Experiment (2024-12-08 17:33:03.465017):
+  n_clusters: 50
+  max_descriptors: 1000000
+  powernorm: True
+  gmp: False
+  gamma: 10
+  C: 100
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298689154846075
+
+Experiment (2024-12-08 17:40:00.814220):
+  n_clusters: 50
+  max_descriptors: 1000000
+  powernorm: True
+  gmp: False
+  gamma: 10
+  C: 1000
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298645830614658
+
+Experiment (2024-12-08 17:47:31.620750):
+  n_clusters: 50
+  max_descriptors: 1000000
+  powernorm: True
+  gmp: False
+  gamma: 100
+  C: 10
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298599990951643
+
+
+Experiment (2024-12-08 18:17:42.181054):
+  n_clusters: 100
+  max_descriptors: 500000
+  powernorm: False
+  gmp: False
+  gamma: 100
+  C: 100
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.729857676822304
+
+Experiment (2024-12-08 18:24:17.632828):
+  n_clusters: 100
+  max_descriptors: 500000
+  powernorm: False
+  gmp: False
+  gamma: 100
+  C: 1000
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298683322803484
+
+Experiment (2024-12-08 18:30:56.291244):
+  n_clusters: 100
+  max_descriptors: 500000
+  powernorm: False
+  gmp: False
+  gamma: 1000
+  C: 100
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298568417931173
+
+Experiment (2024-12-08 18:37:33.200686):
+  n_clusters: 100
+  max_descriptors: 500000
+  powernorm: False
+  gmp: False
+  gamma: 1000
+  C: 1000
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298573187276742
+
+Experiment (2024-12-08 18:44:15.046851):
+  n_clusters: 100
+  max_descriptors: 500000
+  powernorm: False
+  gmp: True
+  gamma: 100
+  C: 100
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298437491071872
+
+Experiment (2024-12-08 18:51:03.544372):
+  n_clusters: 100
+  max_descriptors: 500000
+  powernorm: False
+  gmp: True
+  gamma: 100
+  C: 1000
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.729845142141058
+
+Experiment (2024-12-08 18:57:43.572703):
+  n_clusters: 100
+  max_descriptors: 500000
+  powernorm: False
+  gmp: True
+  gamma: 1000
+  C: 100
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298738415129313
+
+Experiment (2024-12-08 19:04:32.173305):
+  n_clusters: 100
+  max_descriptors: 500000
+  powernorm: False
+  gmp: True
+  gamma: 1000
+  C: 1000
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298681971937334
+
+Experiment (2024-12-08 19:11:17.136552):
+  n_clusters: 100
+  max_descriptors: 500000
+  powernorm: True
+  gmp: False
+  gamma: 100
+  C: 100
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298546421637876
+
+Experiment (2024-12-08 19:18:01.781950):
+  n_clusters: 100
+  max_descriptors: 500000
+  powernorm: True
+  gmp: False
+  gamma: 100
+  C: 1000
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298437624888708
+
+Experiment (2024-12-08 19:24:48.734774):
+  n_clusters: 100
+  max_descriptors: 500000
+  powernorm: True
+  gmp: False
+  gamma: 1000
+  C: 100
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298556465613046
+
+Experiment (2024-12-08 19:31:30.876263):
+  n_clusters: 100
+  max_descriptors: 500000
+  powernorm: True
+  gmp: False
+  gamma: 1000
+  C: 1000
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298618683900538
+
+Experiment (2024-12-08 19:38:23.563931):
+  n_clusters: 100
+  max_descriptors: 500000
+  powernorm: True
+  gmp: True
+  gamma: 100
+  C: 100
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298551952304613
+
+Experiment (2024-12-08 19:45:09.358880):
+  n_clusters: 100
+  max_descriptors: 500000
+  powernorm: True
+  gmp: True
+  gamma: 100
+  C: 1000
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298563319470271
+
+Experiment (2024-12-08 19:51:58.913508):
+  n_clusters: 100
+  max_descriptors: 500000
+  powernorm: True
+  gmp: True
+  gamma: 1000
+  C: 100
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298684233628276
+
+Experiment (2024-12-08 19:58:50.055386):
+  n_clusters: 100
+  max_descriptors: 500000
+  powernorm: True
+  gmp: True
+  gamma: 1000
+  C: 1000
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298385108301941
+
+Experiment (2024-12-08 20:05:38.110688):
+  n_clusters: 100
+  max_descriptors: 1000000
+  powernorm: False
+  gmp: False
+  gamma: 100
+  C: 100
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298639240146736
+
+Experiment (2024-12-08 20:12:27.679655):
+  n_clusters: 100
+  max_descriptors: 1000000
+  powernorm: False
+  gmp: False
+  gamma: 100
+  C: 1000
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298796609948531
+
+Experiment (2024-12-08 20:19:24.449241):
+  n_clusters: 100
+  max_descriptors: 1000000
+  powernorm: False
+  gmp: False
+  gamma: 1000
+  C: 100
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298553379198145
+
+Experiment (2024-12-08 20:26:06.420190):
+  n_clusters: 100
+  max_descriptors: 1000000
+  powernorm: False
+  gmp: False
+  gamma: 1000
+  C: 1000
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298608831875334
+
+Experiment (2024-12-08 20:33:00.863681):
+  n_clusters: 100
+  max_descriptors: 1000000
+  powernorm: False
+  gmp: True
+  gamma: 100
+  C: 100
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298603927485073
+
+Experiment (2024-12-08 20:39:55.802800):
+  n_clusters: 100
+  max_descriptors: 1000000
+  powernorm: False
+  gmp: True
+  gamma: 100
+  C: 1000
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298770575516154
+
+Experiment (2024-12-08 20:46:50.074810):
+  n_clusters: 100
+  max_descriptors: 1000000
+  powernorm: False
+  gmp: True
+  gamma: 1000
+  C: 100
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298735044151373
+
+Experiment (2024-12-08 20:53:38.534449):
+  n_clusters: 100
+  max_descriptors: 1000000
+  powernorm: False
+  gmp: True
+  gamma: 1000
+  C: 1000
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298698863729146
+
+Experiment (2024-12-08 21:00:28.718054):
+  n_clusters: 100
+  max_descriptors: 1000000
+  powernorm: True
+  gmp: False
+  gamma: 100
+  C: 100
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298681137636525
+
+Experiment (2024-12-08 21:07:24.375768):
+  n_clusters: 100
+  max_descriptors: 1000000
+  powernorm: True
+  gmp: False
+  gamma: 100
+  C: 1000
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.729864042396344
+
+Experiment (2024-12-08 21:14:12.406650):
+  n_clusters: 100
+  max_descriptors: 1000000
+  powernorm: True
+  gmp: False
+  gamma: 1000
+  C: 100
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298728446838771
+
+Experiment (2024-12-08 21:21:08.529688):
+  n_clusters: 100
+  max_descriptors: 1000000
+  powernorm: True
+  gmp: False
+  gamma: 1000
+  C: 1000
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298682797073219
+
+Experiment (2024-12-08 21:27:55.055203):
+  n_clusters: 100
+  max_descriptors: 1000000
+  powernorm: True
+  gmp: True
+  gamma: 100
+  C: 100
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.729863242576491
+
+Experiment (2024-12-08 21:34:49.873256):
+  n_clusters: 100
+  max_descriptors: 1000000
+  powernorm: True
+  gmp: True
+  gamma: 100
+  C: 1000
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298777245380725
+
+Experiment (2024-12-08 21:41:44.583716):
+  n_clusters: 100
+  max_descriptors: 1000000
+  powernorm: True
+  gmp: True
+  gamma: 1000
+  C: 100
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298611602992825
+
+Experiment (2024-12-08 21:48:40.187570):
+  n_clusters: 100
+  max_descriptors: 1000000
+  powernorm: True
+  gmp: True
+  gamma: 1000
+  C: 1000
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298562786134971
+
+Experiment (2024-12-08 21:55:33.220923):
+  n_clusters: 200
+  max_descriptors: 500000
+  powernorm: False
+  gmp: False
+  gamma: 100
+  C: 100
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298785572300859
+
+Experiment (2024-12-08 22:02:23.447366):
+  n_clusters: 200
+  max_descriptors: 500000
+  powernorm: False
+  gmp: False
+  gamma: 100
+  C: 1000
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.729865147962978
+
+Experiment (2024-12-08 22:09:22.017454):
+  n_clusters: 200
+  max_descriptors: 500000
+  powernorm: False
+  gmp: False
+  gamma: 1000
+  C: 100
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298700703910451
+
+Experiment (2024-12-08 22:16:18.543984):
+  n_clusters: 200
+  max_descriptors: 500000
+  powernorm: False
+  gmp: False
+  gamma: 1000
+  C: 1000
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298766805538354
+
+Experiment (2024-12-08 22:23:13.827603):
+  n_clusters: 200
+  max_descriptors: 500000
+  powernorm: False
+  gmp: True
+  gamma: 100
+  C: 100
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298792328719087
+
+Experiment (2024-12-08 22:30:05.084494):
+  n_clusters: 200
+  max_descriptors: 500000
+  powernorm: False
+  gmp: True
+  gamma: 100
+  C: 1000
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298744924461027
+
+Experiment (2024-12-08 22:37:00.125151):
+  n_clusters: 200
+  max_descriptors: 500000
+  powernorm: False
+  gmp: True
+  gamma: 1000
+  C: 100
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298415386289852
+
+Experiment (2024-12-08 22:43:42.585480):
+  n_clusters: 200
+  max_descriptors: 500000
+  powernorm: False
+  gmp: True
+  gamma: 1000
+  C: 1000
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298601918776467
+
+Experiment (2024-12-08 22:50:35.667838):
+  n_clusters: 200
+  max_descriptors: 500000
+  powernorm: True
+  gmp: False
+  gamma: 100
+  C: 100
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298536693288864
+
+Experiment (2024-12-08 22:57:27.245821):
+  n_clusters: 200
+  max_descriptors: 500000
+  powernorm: True
+  gmp: False
+  gamma: 100
+  C: 1000
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298510831582511
+
+Experiment (2024-12-08 23:04:09.756052):
+  n_clusters: 200
+  max_descriptors: 500000
+  powernorm: True
+  gmp: False
+  gamma: 1000
+  C: 100
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298606556064929
+
+Experiment (2024-12-08 23:11:05.911416):
+  n_clusters: 200
+  max_descriptors: 500000
+  powernorm: True
+  gmp: False
+  gamma: 1000
+  C: 1000
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298698253719162
+
+Experiment (2024-12-08 23:17:52.272438):
+  n_clusters: 200
+  max_descriptors: 500000
+  powernorm: True
+  gmp: True
+  gamma: 100
+  C: 100
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298635456915091
+
+Experiment (2024-12-08 23:24:48.573892):
+  n_clusters: 200
+  max_descriptors: 500000
+  powernorm: True
+  gmp: True
+  gamma: 100
+  C: 1000
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298792520569236
+
+Experiment (2024-12-08 23:31:35.068406):
+  n_clusters: 200
+  max_descriptors: 500000
+  powernorm: True
+  gmp: True
+  gamma: 1000
+  C: 100
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298777500039935
+
+Experiment (2024-12-08 23:38:20.939814):
+  n_clusters: 200
+  max_descriptors: 500000
+  powernorm: True
+  gmp: True
+  gamma: 1000
+  C: 1000
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298662158325679
+
+Experiment (2024-12-08 23:45:16.551637):
+  n_clusters: 200
+  max_descriptors: 1000000
+  powernorm: False
+  gmp: False
+  gamma: 100
+  C: 100
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298706847920415
+
+Experiment (2024-12-08 23:52:00.193296):
+  n_clusters: 200
+  max_descriptors: 1000000
+  powernorm: False
+  gmp: False
+  gamma: 100
+  C: 1000
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298651304597469
+
+Experiment (2024-12-08 23:58:55.657105):
+  n_clusters: 200
+  max_descriptors: 1000000
+  powernorm: False
+  gmp: False
+  gamma: 1000
+  C: 100
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298487275254664
+
+Experiment (2024-12-09 00:05:45.037578):
+  n_clusters: 200
+  max_descriptors: 1000000
+  powernorm: False
+  gmp: False
+  gamma: 1000
+  C: 1000
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298510436679853
+
+Experiment (2024-12-09 00:12:39.795052):
+  n_clusters: 200
+  max_descriptors: 1000000
+  powernorm: False
+  gmp: True
+  gamma: 100
+  C: 100
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.729857239875974
+
+Experiment (2024-12-09 00:19:33.739443):
+  n_clusters: 200
+  max_descriptors: 1000000
+  powernorm: False
+  gmp: True
+  gamma: 100
+  C: 1000
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298595288860047
+
+Experiment (2024-12-09 00:26:15.103650):
+  n_clusters: 200
+  max_descriptors: 1000000
+  powernorm: False
+  gmp: True
+  gamma: 1000
+  C: 100
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298345627266276
+
+Experiment (2024-12-09 00:33:10.530012):
+  n_clusters: 200
+  max_descriptors: 1000000
+  powernorm: False
+  gmp: True
+  gamma: 1000
+  C: 1000
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298760077056704
+
+Experiment (2024-12-09 00:39:54.719109):
+  n_clusters: 200
+  max_descriptors: 1000000
+  powernorm: True
+  gmp: False
+  gamma: 100
+  C: 100
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298609294995552
+
+Experiment (2024-12-09 00:46:47.007219):
+  n_clusters: 200
+  max_descriptors: 1000000
+  powernorm: True
+  gmp: False
+  gamma: 100
+  C: 1000
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298782960711115
+
+Experiment (2024-12-09 00:53:41.572570):
+  n_clusters: 200
+  max_descriptors: 1000000
+  powernorm: True
+  gmp: False
+  gamma: 1000
+  C: 100
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298752537651629
+
+Experiment (2024-12-09 01:00:26.928389):
+  n_clusters: 200
+  max_descriptors: 1000000
+  powernorm: True
+  gmp: False
+  gamma: 1000
+  C: 1000
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298572859209571
+
+Experiment (2024-12-09 01:07:20.325051):
+  n_clusters: 200
+  max_descriptors: 1000000
+  powernorm: True
+  gmp: True
+  gamma: 100
+  C: 100
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298667767056048
+
+Experiment (2024-12-09 01:14:03.091699):
+  n_clusters: 200
+  max_descriptors: 1000000
+  powernorm: True
+  gmp: True
+  gamma: 100
+  C: 1000
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298589447237286
+
+Experiment (2024-12-09 01:20:55.568132):
+  n_clusters: 200
+  max_descriptors: 1000000
+  powernorm: True
+  gmp: True
+  gamma: 1000
+  C: 100
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298686556945349
+
+Experiment (2024-12-09 01:27:52.327259):
+  n_clusters: 200
+  max_descriptors: 1000000
+  powernorm: True
+  gmp: True
+  gamma: 1000
+  C: 1000
+Results:
+  Top-1 Accuracy: 0.8744444444444445
+  mAP: 0.7298532250180017
+
