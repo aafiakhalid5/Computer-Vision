@@ -1,12 +1,6 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-import sys
-from pathlib import Path
-
-# Add the src directory to sys.path
-sys.path.append(str(Path(__file__).resolve().parents[1]))
-
 from classifier import NearestNeighborClassifier
 from config import Config
 from evaluation import OpenSetEvaluation

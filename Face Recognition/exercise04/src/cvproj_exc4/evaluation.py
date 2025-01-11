@@ -2,12 +2,6 @@ import pickle
 
 import numpy as np
 
-import sys
-from pathlib import Path
-
-# Add the src directory to sys.path
-sys.path.append(str(Path(__file__).resolve().parents[1]))
-
 from classifier import NearestNeighborClassifier
 
 # Class label for unknown subjects in test and training data.
@@ -74,17 +68,6 @@ class OpenSetEvaluation:
             "identification_rates": identification_rates,
         }
         return evaluation_results
-
-        # similarity_thresholds = None
-        # identification_rates = None
-        #
-        # # Report all performance measures.
-        # evaluation_results = {
-        #     "similarity_thresholds": similarity_thresholds,
-        #     "identification_rates": identification_rates,
-        # }
-        #
-        # return evaluation_results
 
     def select_similarity_threshold(self, similarity, false_alarm_rate):
         # Calculate the p-percentile based on the given FAR

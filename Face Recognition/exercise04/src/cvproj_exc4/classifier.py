@@ -1,5 +1,7 @@
 import cv2
 import numpy as np
+
+
 class NearestNeighborClassifier:
 
     def __init__(self):

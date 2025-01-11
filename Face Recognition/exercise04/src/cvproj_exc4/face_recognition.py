@@ -4,16 +4,7 @@ import pickle
 import cv2
 import numpy as np
 
-
-import sys
-from pathlib import Path
-
-# Add the src directory to sys.path
-sys.path.append(str(Path(__file__).resolve().parents[1]))
-
 from config import Config
-
-# from cvproj_exc4.config import Config
 
 # FaceNet to extract face embeddings.
 class FaceNet:
@@ -156,7 +147,7 @@ class FaceClustering:
         random_indices = np.random.choice(len(self.embeddings), self.num_clusters, replace=False)
         self.cluster_center = self.embeddings[random_indices]
 
-        for iteration in range(self.max_iter):
+        for _ in range(self.max_iter):
             # Assign each embedding to the nearest cluster.
             distances = np.linalg.norm(
                 self.embeddings[:, np.newaxis] - self.cluster_center, axis=2

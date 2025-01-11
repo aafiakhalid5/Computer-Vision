@@ -2,7 +2,7 @@ import unittest
 
 import numpy as np
 
-from cvproj_exc4.osr_learning import mpl_training, spl_training
+from osr_learning import mpl_training, spl_training
 
 
 class TestOSRLearning(unittest.TestCase):

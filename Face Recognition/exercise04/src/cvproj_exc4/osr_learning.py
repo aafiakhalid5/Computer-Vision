@@ -3,13 +3,8 @@ from collections.abc import Callable
 import numpy as np
 import pandas as pd
 
-import sys
-from pathlib import Path
-
-# Add the src directory to sys.path
-sys.path.append(str(Path(__file__).resolve().parents[1]))
-
 from config import Config
+
 
 def spl_training(
     x_train: np.ndarray, y_train: np.ndarray

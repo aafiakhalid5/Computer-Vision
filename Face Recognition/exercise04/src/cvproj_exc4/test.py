@@ -3,12 +3,6 @@ import argparse
 import cv2
 import numpy as np
 
-import sys
-from pathlib import Path
-
-# Add the src directory to sys.path
-sys.path.append(str(Path(__file__).resolve().parents[1]))
-
 from config import Config, ReIdMode, enum_choices
 from face_detector import FaceDetector
 from face_recognition import FaceClustering, FaceRecognizer
@@ -23,8 +17,11 @@ from face_recognition import FaceClustering, FaceRecognizer
 
 def main(args):
     # Setup OpenCV video capture.
+    # args.video = 'none' # for testing, I am using my own Macbook's camera and moving my face.
+    args.video = Config.train_data.joinpath("Manuel_Pellegrini", "%04d.jpg")
+    
     if args.video == "none":
-        camera = cv2.VideoCapture(-1)
+        camera = cv2.VideoCapture(0)
         wait_for_frame = 200
     else:
         camera = cv2.VideoCapture(args.video)
@@ -74,18 +71,25 @@ def main(args):
         confidence_str = ""
         state_str = ""
         predicted_label = ""
+        # Commenting this code because for now I am only testing the Face Detection
         if face is not None and not on_track:
             # We found a new face that we can track over time.
             on_track = True
 
             if args.mode == ReIdMode.IDENT:
                 # Face identification: predict identity for the current frame.
-                predicted_label, prob, dist_to_prediction = recognizer.predict(face["aligned"])
+                result = recognizer.predict(face["aligned"])
+                predicted_label, prob, dist_to_prediction = result['label'], result['posterior_prob'], result['distance']
                 label_str = "{}".format(predicted_label)
+                print(prob)
+                print(dist_to_prediction)
+                # prob = float(prob) if prob is not None else 0.0
+                # dist_to_prediction = float(dist_to_prediction) if dist_to_prediction is not None else 0.0
                 confidence_str = "Prob.: {:1.2f}, Dist.: {:1.2f}".format(prob, dist_to_prediction)
             if args.mode == ReIdMode.CLUSTER:
                 # Face clustering: determine cluster for the current frame.
-                predicted_label, distances_to_clusters = clustering.predict(face["aligned"])
+                result = clustering.predict(face["aligned"])
+                predicted_label, distances_to_clusters = result['cluster'], result['distances']
                 label_str = "Cluster {}".format(predicted_label)
                 confidence_str = "Dist.: {}".format(
                     np.array2string(distances_to_clusters, precision=2)
