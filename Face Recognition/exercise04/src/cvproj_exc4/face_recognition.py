@@ -1,6 +1,6 @@
 import os
 import pickle
-
+import csv
 import cv2
 import numpy as np
 
@@ -45,6 +45,9 @@ class FaceRecognizer:
         # The underlying gallery: class labels and embeddings.
         self.labels = []
         self.embeddings = np.empty((0, FaceNet.get_embedding_dimensionality))
+        self.embeddings_grayscale = np.empty((0, FaceNet.get_embedding_dimensionality)) # To store the grayscal version 
+
+        self._handle_version_compatibility()
 
         # Load face recognizer from pickle file if available.
         if os.path.exists(Config.rec_gallery):
@@ -53,45 +56,67 @@ class FaceRecognizer:
     # Save the trained model as a pickle file.
     def save(self):
         with open(Config.rec_gallery, "wb") as f:
-            pickle.dump((self.labels, self.embeddings), f)
+            pickle.dump((self.labels, self.embeddings, self.embeddings_grayscale), f)
 
     # Load trained model from a pickle file.
     def load(self):
         with open(Config.rec_gallery, "rb") as f:
-            (self.labels, self.embeddings) = pickle.load(f)
+            (self.labels, self.embeddings, self.embeddings_grayscale) = pickle.load(f)
 
     # TODO: Train face identification with a new face with labeled identity.
     def partial_fit(self, face, label):
-        embedding = self.facenet.predict(face)  # Extract embedding.
+        face_grayscale = cv2.cvtColor(face, cv2.COLOR_BGR2GRAY)
+        # Again converting back to RGB bcz FaceNet expects 3 channels always
+        face_grayscale = cv2.cvtColor(face_grayscale, cv2.COLOR_GRAY2BGR)
+
+        embedding = self.facenet.predict(face)
+        embedding_grayscale = self.facenet.predict(face_grayscale)
+
         self.embeddings = np.vstack([self.embeddings, embedding])
+        self.embeddings_grayscale = np.vstack([self.embeddings_grayscale, embedding_grayscale])
         self.labels.append(label)
 
 
     # TODO: Predict the identity for a new face.
     def predict(self, face):
-        embedding = self.facenet.predict(face)  # Extract embedding.
-        distances = np.linalg.norm(self.embeddings - embedding, axis=1)
-        nearest_indices = np.argsort(distances)[:self.num_neighbours]
+        face_grayscale = cv2.cvtColor(face, cv2.COLOR_BGR2GRAY)
+        face_grayscale = cv2.cvtColor(face_grayscale, cv2.COLOR_GRAY2BGR)
 
-        # Calculate majority label among neighbors.
+        embedding = self.facenet.predict(face)
+        embedding_grayscale = self.facenet.predict(face_grayscale)
+
+        distances = np.linalg.norm(self.embeddings - embedding, axis=1)
+        distances_grayscale = np.linalg.norm(self.embeddings_grayscale - embedding_grayscale, axis=1)
+        combined_distances = (distances + distances_grayscale) / 2
+
+        nearest_indices = np.argsort(combined_distances)[:self.num_neighbours]
+
+        # We select majority labels among all the labels
         nearest_labels = [self.labels[i] for i in nearest_indices]
         predicted_label = max(set(nearest_labels), key=nearest_labels.count)
 
-        # Calculate posterior probability.
         num_class_matches = nearest_labels.count(predicted_label)
         posterior_prob = num_class_matches / self.num_neighbours
 
-        # Calculate class distance.
         class_distances = [
-            distances[i] for i in nearest_indices if self.labels[i] == predicted_label
+            combined_distances[i] for i in nearest_indices if self.labels[i] == predicted_label
         ]
         class_distance = min(class_distances)
 
-        # Handle open-set thresholding.
         if class_distance > self.max_distance or posterior_prob < self.min_prob:
-            return {"label": "unknown", "posterior_prob": posterior_prob, "distance": class_distance}
+            predicted_label = Config.UNKNOWN_LABEL
 
         return {"label": predicted_label, "posterior_prob": posterior_prob, "distance": class_distance}
+    
+    def _handle_version_compatibility(self):
+        if os.path.exists(Config.rec_gallery):
+            try:
+                with open(Config.rec_gallery, "rb") as f:
+                    data = pickle.load(f)
+                    if not (isinstance(data, tuple) and len(data) == Config.NEW_VERSION_PICKLE_TUPLE_LENGTH):
+                        os.remove(Config.rec_gallery)
+            except Exception:
+                os.remove(Config.rec_gallery)
 
 
 # The FaceClustering class enables unsupervised clustering of face images according to their
@@ -99,7 +124,7 @@ class FaceRecognizer:
 class FaceClustering:
 
     # Prepare FaceClustering; specify all parameters of clustering algorithm.
-    def __init__(self, num_clusters=2, max_iter=25):
+    def __init__(self, num_clusters=2, max_iter=35):
         # TODO: Prepare FaceNet.
         self.facenet = FaceNet()
 
@@ -142,29 +167,38 @@ class FaceClustering:
 
 
     # TODO
-    def fit(self):
-        # Initialize cluster centers randomly.
+    def fit(self, random_seed=None):
+        if random_seed is not None:
+            np.random.seed(random_seed)
+    
         random_indices = np.random.choice(len(self.embeddings), self.num_clusters, replace=False)
         self.cluster_center = self.embeddings[random_indices]
+        inertia_arr = []
 
         for _ in range(self.max_iter):
-            # Assign each embedding to the nearest cluster.
             distances = np.linalg.norm(
                 self.embeddings[:, np.newaxis] - self.cluster_center, axis=2
             )
             self.cluster_membership = np.argmin(distances, axis=1)
 
-            # Update cluster centers.
+            inertia = np.sum(np.min(distances, axis=1) ** 2)
+            inertia_arr.append(inertia)
+
             new_centers = np.array([
                 self.embeddings[self.cluster_membership == i].mean(axis=0)
                 for i in range(self.num_clusters)
             ])
 
-            # Convergence check.
             if np.allclose(self.cluster_center, new_centers):
                 break
             self.cluster_center = new_centers
 
+        with open(Config.clustering_experiments_result_file, "a", newline="") as f:
+            writer = csv.writer(f)
+            # Write header only if the file is empty
+            if f.tell() == 0:
+                writer.writerow(["Num Clusters", "Max Iter", "Inertia Values", "Random Seed"])
+            writer.writerow([self.num_clusters, self.max_iter, inertia_arr, random_seed])
 
     # TODO
     def predict(self, face):

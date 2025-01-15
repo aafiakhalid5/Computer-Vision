@@ -12,6 +12,8 @@ class ReIdMode(Enum):
 
 def enum_choices(enum_type: type[Enum]):
     return list(enum_type) + [e.value for e in enum_type]
+
+
 @dataclass
 class Config:
     project_dir = Path(__file__).parents[2]
@@ -33,3 +35,8 @@ class Config:
 
     chal_val_data = data_dir.joinpath("challenge_validation_data.csv")
     chal_test_data = data_dir.joinpath("challenge_test_data.csv")
+
+    clustering_experiments_result_file = data_dir.joinpath("experiments_results_clustering.csv")
+
+    UNKNOWN_LABEL = 'Unknown'
+    NEW_VERSION_PICKLE_TUPLE_LENGTH = 3

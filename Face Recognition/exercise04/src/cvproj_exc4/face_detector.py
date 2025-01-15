@@ -25,16 +25,16 @@ class FaceDetector:
     # TODO: Track a face in a new image using template matching.
     def track_face(self, image):
         if self.reference is None:
-            # Detect face in the initial frame and set it as reference.
+            # Initially detecting the face and setting it as reference
             detection = self.detect_face(image)
             if detection is not None:
                 self.reference = detection['rect']
-                self.template = self.crop_face(image, self.reference)  # Store the initial template
+                self.template = self.crop_face(image, self.reference)
                 return detection
             else:
                 return None
 
-        # Define the region of interest (ROI) for template matching.
+        # This is the region where we do template matching
         x, y, w, h = self.reference
         search_window = [
             max(0, x - self.tm_window_size),
@@ -43,39 +43,29 @@ class FaceDetector:
             min(image.shape[0], y + h + self.tm_window_size),
         ]
 
-        # Extract the search area from the image.
-        search_area = image[
-                    search_window[1]:search_window[3],
-                    search_window[0]:search_window[2],
-                    ]
+        search_area = image[search_window[1]:search_window[3], search_window[0]:search_window[2]]
 
-        # Perform template matching.
         result = cv2.matchTemplate(search_area, self.template, cv2.TM_SQDIFF_NORMED)
         min_val, _, min_loc, _ = cv2.minMaxLoc(result)
 
         if min_val > self.tm_threshold:
-            # Re-initialize tracking if similarity is below threshold.
             detection = self.detect_face(image)
             if detection is not None:
                 self.reference = detection['rect']
-                self.template = self.crop_face(image, self.reference)  # Update the template
+                self.template = self.crop_face(image, self.reference)
                 return detection
             else:
                 self.reference = None
                 return None
 
-        # Update reference based on tracking result.
-        new_x, new_y = (
+        updated_x, updated_y = (
             search_window[0] + min_loc[0],
             search_window[1] + min_loc[1],
         )
-        self.reference = [new_x, new_y, w, h]
-
-        # Update the template with the new face region.
+        self.reference = [updated_x, updated_y, w, h]
         self.template = self.crop_face(image, self.reference)
-
-        # Align and return the tracked face.
         aligned = self.align_face(image, self.reference)
+
         return {"rect": self.reference, "image": image, "aligned": aligned, "response": min_val}
 
     # Face detection in a new image.
