@@ -18,10 +18,10 @@ from face_recognition import FaceClustering, FaceRecognizer
 def main(args):
     # Setup OpenCV video capture.
     # args.video = 'none' # for testing, I am using my own Macbook's camera and moving my face.
-    args.video = Config.train_data.joinpath("Manuel_Pellegrini", "%04d.jpg")
+    # args.video = Config.test_data.joinpath("Peter_Gilmour", "%04d.jpg")
     
     if args.video == "none":
-        camera = cv2.VideoCapture(0)
+        camera = cv2.VideoCapture(-1)
         wait_for_frame = 200
     else:
         camera = cv2.VideoCapture(args.video)
