@@ -1,14 +1,14 @@
-# 📸 Computer Vision Project – Winter Term 2024/25
+### 📸 Computer Vision Project – Winter Term 2024/25
 
 This repository contains projects developed for the Computer Vision course at FAU Erlangen-Nürnberg. The course spans multiple exercises across different computer vision topics, each in its own module for clarity and modularity.
 
 ---
 
-## 📁 Project Modules
+### 📁 Project Modules
 
 Each directory corresponds to a different core area in computer vision, based on the lecture and exercise structure of the course.
 
-### 🔬 Image Processing on Grayscale and Distance Images
+#### 🔬 Image Processing on Grayscale and Distance Images
 Implements distance-based box detection using ToF sensor data. Core topics:
 - Image and point cloud visualization
 - RANSAC-based plane fitting
@@ -18,7 +18,7 @@ Implements distance-based box detection using ToF sensor data. Core topics:
 
 ---
 
-### 🎨 Demosaicing & HDR
+#### 🎨 Demosaicing & HDR
 Pipeline for processing raw sensor data:
 - Bayer pattern identification
 - Simple demosaicing
@@ -30,7 +30,7 @@ Pipeline for processing raw sensor data:
 
 ---
 
-### ✍️ Writers Retrieval
+#### ✍️ Writers Retrieval
 Writer identification using local image descriptors and VLAD encoding:
 - Codebook generation with MiniBatchKMeans
 - VLAD feature aggregation
@@ -40,7 +40,7 @@ Writer identification using local image descriptors and VLAD encoding:
 
 ---
 
-### 🧑‍🤝‍🧑 Face Recognition
+#### 🧑‍🤝‍🧑 Face Recognition
 Video-based face recognition pipeline:
 - Face detection and tracking (MTCNN, template matching)
 - Face alignment and embedding extraction (FaceNet)
@@ -50,7 +50,7 @@ Video-based face recognition pipeline:
 
 ---
 
-### 🏛️ Computer Vision in Humanities
+#### 🏛️ Computer Vision in Humanities
 Selective search for object proposals in historical domains:
 - Region segmentation using Felzenszwalb
 - Similarity-based region merging
@@ -60,7 +60,7 @@ Selective search for object proposals in historical domains:
 
 ---
 
-## 🚀 Getting Started
+### 🚀 Getting Started
 
 Python ≥ 3.9 is recommended. Install required packages per folder's `requirements.txt` if available.
 
@@ -68,13 +68,13 @@ Python ≥ 3.9 is recommended. Install required packages per folder's `requireme
 pip install -r requirements.txt
 ```
 
-## 📜 License
+### 📜 License
 
 This project is licensed under the Apache 2.0 License.
 
 ---
 
-## 🤝 Acknowledgements
+### 🤝 Acknowledgements
 
 Project supervised by:
 - Thomas Gorges
